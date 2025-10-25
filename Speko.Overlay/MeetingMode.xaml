@@ -1,0 +1,18 @@
+﻿<Window x:Class="Speko.Overlay.MeetingMode"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Speko"
+        Width="500" Height="500"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="#AA1C1C1C"
+        Topmost="True">
+    <Border CornerRadius="10" Padding="10" MouseDown="Window_MouseDown">
+        <StackPanel>
+            <TextBlock Text="🎤 Speko" Foreground="White" FontSize="18" Margin="0 0 0 10"/>
+            <Border Height="100" CornerRadius="5" Padding="10">
+                <TextBlock x:Name="TranscriptText" Text="..." Foreground="LightGray" TextWrapping="Wrap"/>
+            </Border>
+        </StackPanel>
+    </Border>
+</Window>
